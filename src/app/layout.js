@@ -20,11 +20,9 @@ export default function RootLayout({ children }) {
           <Header />
         </header>
         {/* grow: 부족한 공간만큼 늘려준다*/}
-        <main className="bg-blue-200 grow w-full max-w-screen-lg mx-auto">
-          {children}
-        </main>
+        <main className="grow w-full max-w-screen-lg mx-auto">{children}</main>
 
-        <footer className="bottom-0 bg-green-200">
+        <footer className="bottom-0">
           <Footer />
         </footer>
       </body>
