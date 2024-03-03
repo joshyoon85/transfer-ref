@@ -1,5 +1,7 @@
-import { Inter } from "next/font/google";
+import { Inter } from "next/font/google"; // TODO: change font
 import "./globals.css";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,13 +16,17 @@ export default function RootLayout({ children }) {
       {/* flex: 정렬 */}
       {/* flex-col: 정렬의 방향을 위에서 아래로 */}
       <body className="flex flex-col">
-        <header className="bg-yellow-300 top-0">Header</header>
+        <header className="top-0 max-w-screen-xl w-full mx-auto">
+          <Header />
+        </header>
         {/* grow: 부족한 공간만큼 늘려준다*/}
-        <main className="bg-blue-200 grow w-full max-w-screen-xl mx-auto">
+        <main className="bg-blue-200 grow w-full max-w-screen-lg mx-auto">
           {children}
         </main>
 
-        <footer className="bottom-0 bg-green-200">Footer</footer>
+        <footer className="bottom-0 bg-green-200">
+          <Footer />
+        </footer>
       </body>
     </html>
   );
