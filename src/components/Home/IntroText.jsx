@@ -5,12 +5,12 @@ import React from "react";
 export default function IntroText() {
   return (
     <div className="flex flex-col items-center gap-2">
-      <h1 className="text-4xl font-bold text-primary-light-blue text-center">
+      <h1 className="text-2xl sm:text-4xl font-bold text-primary-light-blue text-center">
         Welcome to Transfer Ref, your destination for separating facts from
         soccer transfer rumors.
       </h1>
 
-      <p className="text-lg text-center">
+      <p className="text-sm sm:text-lg text-center">
         In the fast-paced realm of football rumors, it is challenging to discern
         truth from speculation. That is why we are here. With us, you can
         analyze the latest whispers of player transfers, providing you with

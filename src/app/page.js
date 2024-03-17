@@ -16,12 +16,12 @@ import React from "react";
 
 export default function HomePage() {
   return (
-    <section className="h-full flex flex-col justify-center items-center gap-6">
-      <div>
+    <section className="h-full flex flex-col justify-center items-center gap-6 py-6">
+      <div className="px-4">
         <IntroText />
       </div>
 
-      <div>
+      <div className="px-1">
         <RumorForm />
       </div>
     </section>
