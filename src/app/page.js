@@ -2,6 +2,7 @@ import IntroText from "@/components/Home/IntroText";
 import RumorForm from "@/components/Home/RumorForm";
 import RumorInput from "@/components/Home/RumorInput";
 import SubmitButton from "@/components/Home/SubmitButton";
+import LoadingSpinner from "@/components/shared/LoadingSpinner";
 import React from "react";
 
 // Search Bar: player’s name, team
@@ -24,6 +25,8 @@ export default function HomePage() {
       <div className="px-1">
         <RumorForm />
       </div>
+
+      {/* <LoadingSpinner /> */}
     </section>
   );
 }

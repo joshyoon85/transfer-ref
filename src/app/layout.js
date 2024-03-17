@@ -1,9 +1,7 @@
-import { Inter } from "next/font/google"; // TODO: change font
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import { globalFont } from "@/utils/fonts/globalFont";
 
 export const metadata = {
   title: "Soccer Rumor",
@@ -12,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={globalFont.className}>
       {/* flex: 정렬 */}
       {/* flex-col: 정렬의 방향을 위에서 아래로 */}
       <body className="flex flex-col">
