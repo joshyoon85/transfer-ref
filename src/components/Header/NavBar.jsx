@@ -9,7 +9,6 @@ import React from "react";
 const menu = [
   { text: "Home", href: "/" },
   { text: "Explore", href: "/search" },
-  { text: "Contact", href: "/contact" },
 ];
 
 export default function NavBar() {

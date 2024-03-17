@@ -16,7 +16,7 @@ import React from "react";
 
 export default function HomePage() {
   return (
-    <section className="h-full flex flex-col justify-center items-center gap-2">
+    <section className="h-full flex flex-col justify-center items-center gap-6">
       <div>
         <IntroText />
       </div>
