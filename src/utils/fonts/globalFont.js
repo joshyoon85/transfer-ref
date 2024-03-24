@@ -1,8 +1,10 @@
 // HW: font 찾아오기
 
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
-export const globalFont = Inter({ subsets: ["latin"] });
+export const globalFont = localFont({
+    src: "../../assets/fonts/Aleo-Italic.ttf",
+})
 
 // google variable font: link
 // google font: link
