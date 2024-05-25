@@ -1,9 +1,9 @@
 import { verifyRumor } from "@/services/verify";
 import React from "react";
 
-export default function SubmitButton({ rumor }) {
+export default function SubmitButton({ rumor, setPrediction }) {
   const submitRumor = async () => {
-    console.log("submitted rumor: ", rumor);
+    // console.log("submitted rumor: ", rumor);
 
     // TODO: send the rumor to the server
     const data = {
@@ -11,7 +11,9 @@ export default function SubmitButton({ rumor }) {
     };
     const res = await verifyRumor(data);
 
-    console.log("response: ", res);
+    // console.log("response: ", res.prediction);
+
+    setPrediction(res.prediction);
     return;
   };
 

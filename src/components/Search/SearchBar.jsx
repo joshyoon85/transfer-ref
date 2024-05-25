@@ -7,7 +7,7 @@ export default function SearchBar() {
   const [searchText, setSearchText] = useState("");
 
   const submitSearchText = () => {
-    console.log("Search for: ", searchText);
+    // console.log("Search for: ", searchText);
   };
 
   return (
